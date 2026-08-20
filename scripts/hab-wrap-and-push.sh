@@ -72,8 +72,8 @@ EOF
 bio pkg build -k hubsfoundation .
 
 ### upload
-echo "### upload hab pkg to bldr.reticulum.io-outdated"
-export HAB_BLDR_URL="https://bldr.reticulum.io-outdated"
+echo "### upload hab pkg to bldr.reticulum.io.invalid"
+export HAB_BLDR_URL="https://bldr.reticulum.io.invalid"
 export HAB_AUTH_TOKEN=$BLDR_RET_TOKEN
 echo $BLDR_RET_PUB_B64 | base64 -d > /hab/cache/keys/hubsfoundation-20190117233449.pub
 hart="/hab/cache/artifacts/hubsfoundation-hubs*.hart"
